@@ -125,8 +125,8 @@ def mains():
             list_name = xiazaigequ(ids)
             save(list_name[0] ,list_name[1])
 
-# if __name__ == '__main__':
+if __name__ == '__main__':
    #酷狗飙升榜 https://www.kugou.com/yy/rank/home/1-6666.html?from=rank
    # gequ("https://www.kugou.com/yy/rank/home/1-6666.html?from=rank")
    # xiazaigequ("bposqx9d")
-   # mains()
+   mains()

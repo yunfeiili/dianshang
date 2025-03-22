@@ -38,10 +38,10 @@ if __name__ == '__main__':
     for figure in figure_list:
         try:
             img_src = figure.xpath('./a/img/@data-src')[0]
+            img_src = 'https:' + img_src
+            img_name = img_src.split('/')[-1]
         except(IndexError):
             print('未成功匹配到字段')
-        img_src = 'https:' + img_src
-        img_name = img_src.split('/')[-1]
         try:
             img_data = requests.get(url=img_src, headers=header).content
         except(requests.exceptions.InvalidURL):
