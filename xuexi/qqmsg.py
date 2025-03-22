@@ -41,7 +41,8 @@ def send_msg(people, msg):
 
     for i in range(1,3):
     # 输入需要发送的信息
-        gui.moveTo(285, 524, duration=0.2)  #发送消息输入框的鼠标位置
+        gui.moveTo(285, 524, duration=0.2)  #发送消息输入框的鼠标位置游戏G
+
         gui.click()
         pyperclip.copy(msg)
         gui.hotkey('ctrl', 'v')

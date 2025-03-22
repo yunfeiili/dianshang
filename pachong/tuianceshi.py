@@ -1,8 +1,8 @@
 import os,time
 from lxml import etree
 from requests.adapters import HTTPAdapter
-if not os.path.exists('../meitu'):
-    os.mkdir('../meitu')
+if not os.path.exists('./meitu'):
+    os.mkdir('./meitu')
 
 def tupian():
     from pip._vendor import requests, urllib3
@@ -18,8 +18,8 @@ def tupian():
     }
     url = 'https://pic.netbian.com/4kmeinv/index_%d.html'
     for i in range(6,9):
-        new_url = format(url%i)
-        responses = requests.get(url=new_url,headers=headers)
+        # new_url = format(url%i)
+        responses = requests.get(url=url,headers=headers)
         responses.encoding = 'GBK'
         paga_text = responses.text
         tree = etree.HTML(paga_text)

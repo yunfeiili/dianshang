@@ -114,20 +114,21 @@ def mains():
             save(list_name[0] ,list_name[1])
 
 if __name__ == '__main__':
+    mains()
     # html_url()
     # id_list = gequ("https://www.kugou.com/yy/rank/home/1-6666.html?from=rank")
     # for i in id_list:
     #     xiazaigequ(i)
 
     # xiazaigequ()
-    print(md5jiami(1735440849,1735440849481))
-    # t = time.time()
-    miao = int(time.time())
-    haomiao = int(round(time.time() * 1000))
-    print(miao)
-    print(haomiao)
-    1735440849
-    1735440849481
+    # print(md5jiami(1735440849,1735440849481))
+    # # t = time.time()
+    # miao = int(time.time())
+    # haomiao = int(round(time.time() * 1000))
+    # print(miao)
+    # print(haomiao)
+    # 1735440849
+    # 1735440849481
 
 
 
