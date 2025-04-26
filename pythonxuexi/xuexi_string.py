@@ -63,3 +63,17 @@ print(http.replace("www","http"))
 for i in http:
     print(i)
 
+
+str_4 = "JJJJJjjjjGHYGSHGFSGFAJLSGFGFUAGFUEUFAUIEHFUIAEGFEHj"
+dict_1 = {
+
+}
+str_4 = str_4.lower()
+for i in str_4:
+    dict_1[i] = str_4.count(i)
+
+for k , v in dict_1.items():
+    print("当前的key是: {}, 总共出现的次数是: {}".format(k,v))
+
+print(dict_1)
+
